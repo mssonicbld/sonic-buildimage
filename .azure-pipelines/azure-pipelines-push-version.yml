@@ -107,9 +107,9 @@ stages:
         git commit -m "[ci/build]: Upgrade SONiC package versions"
         git checkout -b $BRANCH_NAME
         echo "https://github.com/$GIT_USER/$GIT_REPO"
+        git rmeote delete remote || true
         git remote add remote https://github.com/$GIT_USER/$GIT_REPO
         git push remote HEAD:refs/heads/$BRANCH_NAME -f
-        git branch -u remote/$BRANCH_NAME
 
       env:
         GIT_USER: $(GIT_USER)
