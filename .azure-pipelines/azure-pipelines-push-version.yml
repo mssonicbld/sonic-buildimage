@@ -54,10 +54,12 @@ stages:
       displayName: 'Install gh'
     - checkout: self
       displayName: 'Checkout code'
-    - download: specific
-      runVersion: specific
-      runId: ${{ parameters.runId }}
-      patterns: '**/versions-*'
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        source: 'specific'
+        runVersion: 'specific'
+        runId: '${{ parameters.runId }}'
+        patterns: '**/versions-*'
     - script: |
         mkdir -p target
         default_platform=broadcom
