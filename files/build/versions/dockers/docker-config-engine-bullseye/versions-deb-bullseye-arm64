@@ -1,5 +1,8 @@
 binutils-aarch64-linux-gnu==2.35.2-2
 icu-devtools==67.1-7
+libc-dev-bin==2.31-13+deb11u5
+libc6==2.31-13+deb11u5
+libc6-dev==2.31-13+deb11u5
 libicu-dev==67.1-7
 libicu67==67.1-7
 libxml2==2.9.10+dfsg-6.7+deb11u2

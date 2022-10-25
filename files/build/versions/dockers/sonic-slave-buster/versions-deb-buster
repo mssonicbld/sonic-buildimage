@@ -289,7 +289,7 @@ libbinutils==2.31.1-16
 libbison-dev==2:3.3.2.dfsg-1
 libbit-vector-perl==7.4-1+b5
 libblkid-dev==2.33.1-0.1
-libbluetooth3==5.50-1.2~deb10u2
+libbluetooth3==5.50-1.2~deb10u3
 libbluray2==1:1.1.0-1
 libboost-atomic1.71-dev==1.71.0-6~bpo10+1
 libboost-atomic1.71.0==1.71.0-6~bpo10+1
