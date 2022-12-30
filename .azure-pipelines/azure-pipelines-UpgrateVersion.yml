@@ -42,6 +42,21 @@ parameters:
   - mellanox
 
 stages:
+- stage: Prepare
+  jobs:
+  - job: Init
+    steps:
+    - checkout: none
+    - script: |
+        DEFAULT_MIRROR_URL_PREFIX=http://packages.trafficmanager.net
+        DEBIAN_TIMESTAMP=$(curl $DEFAULT_MIRROR_URL_PREFIX/snapshot/debian/latest/timestamp)
+        DEBIAN_SECURITY_TIMESTAMP=$(curl $DEFAULT_MIRROR_URL_PREFIX/snapshot/debian-security/latest/timestamp)
+        echo "##vso[task.setvariable variable=DEBIAN_TIMESTAMP]$DEBIAN_TIMESTAMP"
+        echo "##vso[task.setvariable variable=DEBIAN_SECURITY_TIMESTAMP]$DEBIAN_SECURITY_TIMESTAMP"
+        echo "DEBIAN_TIMESTAMP=$DEBIAN_TIMESTAMP"
+        echo "DEBIAN_SECURITY_TIMESTAMP=$DEBIAN_SECURITY_TIMESTAMP"
+      name: setVariables
+      displayName: 'Set variables'
 - stage: Build
   variables:
     - name: CACHE_MODE
@@ -50,6 +65,10 @@ stages:
       value: 'SONIC_VERSION_CONTROL_COMPONENTS='
     - name: MIRROR_SNAPSHOT
       value: y
+    - name: DEBIAN_TIMESTAMP
+      value: $[ dependencies.Prepare.Init.outputs['setVariables.DEBIAN_TIMESTAMP'] ]
+    - name: DEBIAN_SECURITY_TIMESTAMP
+      value: $[ dependencies.Prepare.Init.outputs['setVariables.DEBIAN_SECURITY_TIMESTAMP'] ]
     - template: .azure-pipelines/template-variables.yml@buildimage
   jobs:
   - template: azure-pipelines-build.yml
