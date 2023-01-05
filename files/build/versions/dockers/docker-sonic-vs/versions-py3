@@ -10,12 +10,12 @@ deprecated==1.2.13
 docker==6.0.1
 docker-image-py==0.1.12
 enlighten==1.11.1
-filelock==3.8.2
+filelock==3.9.0
 idna==3.4
-importlib-metadata==5.2.0
+importlib-metadata==6.0.0
 jsonpatch==1.32
 jsonpointer==2.3
-lazy-object-proxy==1.8.0
+lazy-object-proxy==1.9.0
 m2crypto==0.38.0
 netifaces==0.10.9
 packaging==22.0
@@ -24,7 +24,7 @@ prefixed==0.5.0
 prettyprinter==0.18.0
 ptyprocess==0.7.0
 pycairo==1.23.0
-pygments==2.13.0
+pygments==2.14.0
 pygobject==3.42.2
 pyparsing==3.0.9
 pyroute2==0.5.14
