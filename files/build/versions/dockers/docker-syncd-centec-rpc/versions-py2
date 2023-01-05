@@ -1,0 +1,8 @@
+cffi==1.7.0
+nnpy==1.4.2
+pip==18.1
+ptf==0.9.1
+pycparser==2.21
+scapy==2.4.0
+setuptools==40.8.0
+wheel==0.37.1
