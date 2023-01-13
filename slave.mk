@@ -80,6 +80,7 @@ export IMAGE_DISTRO
 export IMAGE_DISTRO_DEBS_PATH
 export MULTIARCH_QEMU_ENVIRON
 export DOCKER_BASE_ARCH
+export MIRROR_SNAPSHOT
 
 ###############################################################################
 ## Utility rules

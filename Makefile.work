@@ -140,6 +140,7 @@ SLAVE_IMAGE = $(SLAVE_BASE_IMAGE)-$(USER_LC)
 # Generate the version control build info
 $(shell SONIC_VERSION_CONTROL_COMPONENTS=$(SONIC_VERSION_CONTROL_COMPONENTS) \
     TRUSTED_GPG_URLS=$(TRUSTED_GPG_URLS) PACKAGE_URL_PREFIX=$(PACKAGE_URL_PREFIX) \
+    MIRROR_SNAPSHOT=$(MIRROR_SNAPSHOT) \
     scripts/generate_buildinfo_config.sh)
 
 # Generate the slave Dockerfile, and prepare build info for it
@@ -309,6 +310,7 @@ SONIC_BUILD_INSTRUCTION :=  make \
                            BUILD_MULTIASIC_KVM=$(BUILD_MULTIASIC_KVM) \
                            MIRROR_URLS=$(MIRROR_URLS) \
                            MIRROR_SECURITY_URLS=$(MIRROR_SECURITY_URLS) \
+                           MIRROR_SNAPSHOT=$(MIRROR_SNAPSHOT) \
                            $(SONIC_OVERRIDE_BUILD_VARS)
 
 .PHONY: sonic-slave-build sonic-slave-bash init reset
