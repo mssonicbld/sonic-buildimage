@@ -22,7 +22,7 @@ if [ "$ARCHITECTURE" == "armhf" ]; then
 fi
 
 if [ "$MIRROR_SNAPSHOT" == y ]; then
-    if [ -f $MIRROR_VERSION_FILE ]; then
+    if [ -f "$MIRROR_VERSION_FILE" ]; then
         DEBIAN_TIMESTAMP=$(grep "^debian==" $MIRROR_VERSION_FILE | tail -n 1 | sed 's/.*==//')
         DEBIAN_SECURITY_TIMESTAMP=$(grep "^debian-security==" $MIRROR_VERSION_FILE | tail -n 1 | sed 's/.*==//')
     elif [ -z "$DEBIAN_TIMESTAMP" ] || [ -z "$DEBIAN_SECURITY_TIMESTAMP" ]; then
