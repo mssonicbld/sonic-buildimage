@@ -18,7 +18,7 @@ bzip2==1.0.8-4
 ca-certificates==20210119
 cgroup-tools==0.41-11
 conntrack==1:1.4.6-2
-containerd.io==1.6.18-1
+containerd.io==1.6.20-1
 cpio==2.13+dfsg-4
 cpp==4:10.2.1-1
 cpp-10==10.2.1-6
@@ -383,6 +383,7 @@ systemd-sysv==247.3-7+deb11u1
 tcpdump==4.99.0-2+deb11u1
 tcptraceroute==1.5beta7+debian-4.1+b1
 traceroute==1:2.1.0-2+b1
+tzdata==2021a-1+deb11u9
 u-boot-tools==2021.01+dfsg-5
 ucf==3.0043
 udev==247.3-7+deb11u1
