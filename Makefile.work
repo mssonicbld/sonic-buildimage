@@ -307,13 +307,18 @@ SONIC_BUILD_INSTRUCTION :=  make \
                            SLAVE_DIR=$(SLAVE_DIR) \
                            ENABLE_AUTO_TECH_SUPPORT=$(ENABLE_AUTO_TECH_SUPPORT) \
                            BUILD_MULTIASIC_KVM=$(BUILD_MULTIASIC_KVM) \
+                           MIRROR_URLS=$(MIRROR_URLS) \
+                           MIRROR_SECURITY_URLS=$(MIRROR_SECURITY_URLS) \
                            $(SONIC_OVERRIDE_BUILD_VARS)
 
 .PHONY: sonic-slave-build sonic-slave-bash init reset
 
 .DEFAULT_GOAL :=  all
 
-%::
+export MIRROR_URLS
+export MIRROR_SECURITY_URLS
+
+%:: | sonic-build-hooks
 ifeq ($(MULTIARCH_QEMU_ENVIRON), y)
 	@$(DOCKER_MULTIARCH_CHECK)
 ifneq ($(BLDENV), )
@@ -323,8 +328,6 @@ endif
 endif
 	@$(OVERLAY_MODULE_CHECK)
 
-	@pushd src/sonic-build-hooks; TRUSTED_GPG_URLS=$(TRUSTED_GPG_URLS) make all; popd
-	@cp src/sonic-build-hooks/buildinfo/sonic-build-hooks* $(SLAVE_DIR)/buildinfo
 	@docker inspect --type image $(SLAVE_BASE_IMAGE):$(SLAVE_BASE_TAG) &> /dev/null || \
 	    { [ $(ENABLE_DOCKER_BASE_PULL) == y ] && { echo Image $(SLAVE_BASE_IMAGE):$(SLAVE_BASE_TAG) not found. Pulling...; } && \
 	      $(DOCKER_BASE_PULL) && \
@@ -349,6 +352,8 @@ endif
 sonic-build-hooks:
 	@pushd src/sonic-build-hooks; TRUSTED_GPG_URLS=$(TRUSTED_GPG_URLS) make all; popd
 	@cp src/sonic-build-hooks/buildinfo/sonic-build-hooks* $(SLAVE_DIR)/buildinfo
+	@[ "$(MULTIARCH_QEMU_ENVIRON)" == y ] && scripts/build_mirror_config.sh $(SLAVE_DIR) amd64 $(BLDENV)
+	@scripts/build_mirror_config.sh $(SLAVE_DIR) $(CONFIGURED_ARCH) $(BLDENV)
 
 sonic-slave-base-build : sonic-build-hooks
 ifeq ($(MULTIARCH_QEMU_ENVIRON), y)
