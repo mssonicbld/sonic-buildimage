@@ -1,3 +1,6 @@
+http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_6.1.0-3.debian.tar.xz==fc7fd2b3eebb09770c1608dcddda878e
+http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_6.1.0-3.dsc==c3116f907750a9e903d605b18256839f
+http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_6.1.0.orig.tar.xz==f3ff4461e25dbc5ef1fb7a9167a9523d
 http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.9-2.debian.tar.xz==833a30b64d7b257ce27e6bfa91a33b96
 http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.9-2.dsc==f75e4908e4c841e569447376be6bb043
 http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.9.orig.tar.xz==ffa00f68d63e723c21b8a091c5c0271b
@@ -20,6 +23,7 @@ http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-p4c_1.2.
 http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-pi_0.1.0-15.debian.tar.xz==b9d8e4ce4cb66385250cf6dded0ef57a
 http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-pi_0.1.0-15.dsc==ee4f5c84d621a5dbfbe368baad031af4
 http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-pi_0.1.0.orig.tar.gz==551d3780d615557674e93fa11210499d
+http://www.mellanox.com/downloads/MFT/mft-4.34.0-145-x86_64-deb.tgz==c6d68339ee34d84f94438c79d4ce9f52
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.debian.tar.xz==5a87fe5e2077763dd62ad40716804954
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.dsc==c9d75e69a27738c24a25fff61285998b
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37.orig.tar.xz==6075acd95528d14013fcde1ae279efdf
@@ -44,9 +48,21 @@ https://github.com/aristanetworks/sonic-firmware/raw/24716c4e03f223d8e18afff786a
 https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-amd64==89248680f7d19c124f9c093873f8ed59
 https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-arm64==b696a1c0e36abe8768d6bfe35d187e75
 https://github.com/CumulusNetworks/ifupdown2/archive/3.0.0-1.tar.gz==755459b3a58fbc11625336846cea7420
+https://github.com/fullstorydev/grpcurl/releases/download/v1.9.1/grpcurl_1.9.1_linux_x86_64.tar.gz==a263191ce012be65578b74613c688a3c
 https://github.com/karimra/gnoic/releases/download/v0.1.0/checksums.txt==596e4993493864bf7c58711d5b4c09a1
 https://github.com/karimra/gnoic/releases/download/v0.1.0/gnoic_0.1.0_linux_x86_64.tar.gz==5098ef96ff03883c1fb95c79c2e3b20c
 https://github.com/Kitware/CMake/releases/download/v3.27.6/cmake-3.27.6-linux-x86_64.sh==2e8b2fb7d799d83acf895e20bd1966aa
+https://github.com/Mellanox/sonic-bluefield-packages/releases/download/rshim-2.5.7-trixie-amd64/rshim_2.5.7_amd64.deb==8320da5f1ea22445a1df60699b75ac92
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.2096/fw-SPC-rel-13_2016_2096-EVB.mfa==457b9d329230bb7f0d0c57251bcde489
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.2096/fw-SPC2-rel-29_2016_2096-EVB.mfa==5c2ddad375c3d3760d3d3d31b7eecd3a
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.2096/fw-SPC3-rel-30_2016_2096-EVB.mfa==d3ad931db64ad223f473b326c371bf1d
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.2096/fw-SPC4-rel-34_2016_2096-EVB.mfa==cb2fa5eec82cc6a53f3c5dca17e0d324
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.2096/fw-SPC5-rel-37_2016_2096-EVB.mfa==98e552d47dac6122a6801228af8e4c9d
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2505.33.2.67-bookworm-amd64/mlnx-sai-dbgsym_1.mlnx.SAIBuild2505.33.2.67_amd64.deb==f0c0306833245581e4feafaba5775bad
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2505.33.2.67-bookworm-amd64/mlnx-sai_1.mlnx.SAIBuild2505.33.2.67_amd64.deb==7ca1fef314d2695fc96de5bd1fb3b53f
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.2096-bookworm-amd64/sys-sdk_1.mlnx.4.8.2096_amd64-dev.deb==2626df0612b4099d0ddff3ccd77670c5
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.2096-bookworm-amd64/sys-sdk_1.mlnx.4.8.2096_amd64.deb==825d2dd3e7db0dc3a873c67e2e8ddc13
+https://github.com/Mellanox/Spectrum-SDK-Drivers/archive/refs/heads/4.8.2096.zip==b3dc71405f5b238af42df646e2f1cd94
 https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz==6f56ef28c93cee644e8c4aaaef7cfb55
 https://raw.githubusercontent.com/p4lang/ptf/master/ptf_nn/ptf_nn_agent.py==b16e05ede6aed78f7abadae1185f487d
 https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/4.2.3/openapi-generator-cli-4.2.3.jar==cda48eb414c8b4585e280c3fb2656e24

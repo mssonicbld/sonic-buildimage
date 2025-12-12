@@ -426,7 +426,7 @@ libpixman-1-0==0.42.2-1
 libpkgconf3==1.8.1-1
 libpmix-dev==4.2.2-1+deb12u1
 libpmix2==4.2.2-1+deb12u1
-libpng16-16==1.6.39-2
+libpng16-16==1.6.39-2+deb12u1
 libpopt0==1.19+dfsg-1
 libproc2-0==2:4.0.2-3
 libprotobuf-dev==3.21.12-3

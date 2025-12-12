@@ -106,7 +106,7 @@ docbook-xml==4.5-12
 docker-buildx-plugin==0.10.5-1~debian.12~bookworm
 docker-ce==5:24.0.2-1~debian.12~bookworm
 docker-ce-cli==5:24.0.2-1~debian.12~bookworm
-docker-ce-rootless-extras==5:29.0.2-1~debian.12~bookworm
+docker-ce-rootless-extras==5:29.1.2-1~debian.12~bookworm
 docker-compose-plugin==2.18.1-1~debian.12~bookworm
 docutils-common==0.19+dfsg-6
 dosfstools==4.2-1
@@ -308,11 +308,11 @@ libavahi-client3==0.8-10+deb12u1
 libavahi-common-data==0.8-10+deb12u1
 libavahi-common3==0.8-10+deb12u1
 libavc1394-0==0.5.4-5
-libavcodec59==7:5.1.7-0+deb12u1
-libavfilter8==7:5.1.7-0+deb12u1
-libavformat59==7:5.1.7-0+deb12u1
+libavcodec59==7:5.1.8-0+deb12u1
+libavfilter8==7:5.1.8-0+deb12u1
+libavformat59==7:5.1.8-0+deb12u1
 libavif15==0.11.1-1+deb12u1
-libavutil57==7:5.1.7-0+deb12u1
+libavutil57==7:5.1.8-0+deb12u1
 libb-hooks-endofscope-perl==0.26-1
 libb-hooks-op-check-perl==0.22-2+b1
 libbabeltrace-dev==1.5.11-1+b2
@@ -1117,9 +1117,9 @@ libplexus-velocity-java==1.2-3.1
 libpmem1==1.12.1-2
 libpmix-dev==4.2.2-1+deb12u1
 libpmix2==4.2.2-1+deb12u1
-libpng-dev==1.6.39-2
-libpng-tools==1.6.39-2
-libpng16-16==1.6.39-2
+libpng-dev==1.6.39-2+deb12u1
+libpng-tools==1.6.39-2+deb12u1
+libpng16-16==1.6.39-2+deb12u1
 libpocketsphinx3==0.8+5prealpha+1-15
 libpod-constants-perl==0.19-2
 libpod-parser-perl==1.65-1
@@ -1129,7 +1129,7 @@ libpoppler-glib8==22.12.0-2+deb12u1
 libpoppler126==22.12.0-2+deb12u1
 libpopt-dev==1.19+dfsg-1
 libpopt0==1.19+dfsg-1
-libpostproc56==7:5.1.7-0+deb12u1
+libpostproc56==7:5.1.8-0+deb12u1
 libpotrace0==1.16-2
 libproc-processtable-perl==0.634-1+b2
 libproc2-0==2:4.0.2-3
@@ -1302,8 +1302,8 @@ libsubunit0==1.4.0-3
 libsurefire-java==2.22.3-2
 libsvtav1enc1==1.4.1+dfsg-1
 libswitch-perl==2.17-3
-libswresample4==7:5.1.7-0+deb12u1
-libswscale6==7:5.1.7-0+deb12u1
+libswresample4==7:5.1.8-0+deb12u1
+libswscale6==7:5.1.8-0+deb12u1
 libsynctex2==2022.20220321.62855-5.1+deb12u2
 libsyntax-keyword-try-perl==0.28-1
 libsys-cpuaffinity-perl==1.13~03-2+b1

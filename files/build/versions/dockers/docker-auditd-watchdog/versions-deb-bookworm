@@ -18,3 +18,4 @@ python3-yaml==6.0-3+b2
 python3-yang==1.0.73
 sonic-db-cli==1.0.0
 sonic-eventd==1.0.0-0
+sonic-supervisord-utilities-rs==1.0.0

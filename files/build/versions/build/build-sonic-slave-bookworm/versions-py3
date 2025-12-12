@@ -9,6 +9,7 @@ enum34==1.1.10
 filelock==3.20.0
 freezegun==1.5.5
 ijson==3.2.3
+inotify==0.2.12
 invoke==2.2.1
 ipaddress==1.0.23
 jsondiff==2.2.1
@@ -26,6 +27,7 @@ prettyprinter==0.18.0
 pycairo==1.26.1
 pynacl==1.6.1
 python-arptable==0.0.2
+responses==0.25.8
 scp==0.14.5
 semantic-version==2.10.0
 supervisor==4.3.0
