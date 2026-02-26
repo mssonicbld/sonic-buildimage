@@ -448,77 +448,6 @@ check_apt_version()
     fi
 }
 
-# Pin apt-get install arguments to versions from versions-deb when version control is enabled.
-# Outputs the modified argument list. Empty output means no changes needed.
-# Note: Options after 'install' (e.g., '-t bullseye') have their flag skipped but the
-# value (e.g., 'bullseye') is treated as a package name — it won't match in versions-deb
-# so it passes through unchanged. This is safe but not ideal.
-pin_apt_versions()
-{
-    if [ "$ENABLE_VERSION_CONTROL_DEB" != "y" ]; then
-        return
-    fi
-
-    local VERSION_FILE="${VERSION_PATH}/versions-deb"
-    if [ ! -f "$VERSION_FILE" ]; then
-        return
-    fi
-
-    local modified=false
-    local args=()
-    local in_install=false
-    for para in "$@"; do
-        if [[ "$para" == -* ]]; then
-            args+=("$para")
-            continue
-        fi
-
-        if [ "$in_install" == false ]; then
-            if [ "$para" == "install" ]; then
-                in_install=true
-            fi
-            args+=("$para")
-            continue
-        fi
-
-        # Already has version pinned
-        if [[ "$para" == *=* ]]; then
-            args+=("$para")
-            continue
-        fi
-
-        # Look up version in versions-deb file (exact match on package name).
-        # Use awk instead of grep to avoid regex issues with +/. in package names.
-        local version=$(awk -F'==' -v pkg="$para" '$1==pkg {print $2; exit}' "$VERSION_FILE")
-        if [ -n "$version" ]; then
-            # Strip +fips suffix unconditionally — FIPS packages are
-            # locally rebuilt and not available from Debian apt repos
-            # regardless of whether the current build enables FIPS.
-            version="${version%+fips}"
-
-            # Verify the pinned version is available for the current
-            # architecture.  versions-deb may have been generated on a
-            # different arch (e.g. arm64) whose binary NMU revisions
-            # (+b1, +b2 …) do not exist on amd64.
-            # Use apt-cache madison (not apt-cache show) because show
-            # returns exit 0 even when the specific version is absent.
-            if ! apt-cache madison "$para" 2>/dev/null | awk -F'|' -v ver="$version" '{gsub(/^ +| +$/,"",$2); if($2==ver) found=1} END{exit !found}'; then
-                args+=("$para")
-                continue
-            fi
-
-            args+=("${para}=${version}")
-            modified=true
-        else
-            args+=("$para")
-        fi
-    done
-
-    if [ "$modified" == true ]; then
-        echo "${args[@]}"
-    fi
-}
-
 acquire_apt_installation_lock()
 {
     local result=n
@@ -558,6 +487,9 @@ update_preference_deb()
         for pacakge_version in $(cat "$version_file"); do
             package=$(echo $pacakge_version | awk -F"==" '{print $1}')
             version=$(echo $pacakge_version | awk -F"==" '{print $2}')
+            # Strip +fips suffix — FIPS packages are locally rebuilt
+            # and not available from Debian apt repos
+            version="${version%+fips}"
             echo -e "Package: $package\nPin: version $version\nPin-Priority: 999\n\n" >> $VERSION_DEB_PREFERENCE
         done
     fi
