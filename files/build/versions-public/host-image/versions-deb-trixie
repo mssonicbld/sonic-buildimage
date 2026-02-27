@@ -80,7 +80,7 @@ grub2-common==2.06-13+deb13u1
 haveged==1.9.19-12
 hdparm==9.65+ds-1.1
 hping3==3.a2.ds2-10.1
-hw-management==1.mlnx.7.0050.2930
+hw-management==1.mlnx.7.0050.3001
 i2c-tools==4.4-2
 ifmetric==0.3-5+b1
 ifupdown2==3.0.0-1
@@ -406,6 +406,7 @@ python3-pip==25.1.1+dfsg-1
 python3-pkg-resources==78.1.1-0.1
 python3-ply==3.11-9
 python3-prefixed==0.7.0-1
+python3-psutil==7.0.0-2
 python3-pycparser==2.22-2
 python3-regex==0.1.20241106-1+b1
 python3-requests==2.32.3+dfsg-5

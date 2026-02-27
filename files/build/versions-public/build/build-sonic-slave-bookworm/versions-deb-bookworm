@@ -10,7 +10,6 @@ libdoca-sdk-dpdk-bridge-dev==3.3.0055-1
 libdoca-sdk-flow-dev==3.3.0055-1
 libgrpc-dev==1.39.0-1
 libibverbs-dev==2601.0.1-1
-libnl-3-200==3.7.0-0.2+b1sonic1
 libnl-3-dev==3.7.0-0.2+b1sonic1
 libnl-cli-3-200==3.7.0-0.2+b1sonic1
 libnl-cli-3-dev==3.7.0-0.2+b1sonic1
@@ -18,7 +17,6 @@ libnl-genl-3-200==3.7.0-0.2+b1sonic1
 libnl-genl-3-dev==3.7.0-0.2+b1sonic1
 libnl-nf-3-200==3.7.0-0.2+b1sonic1
 libnl-nf-3-dev==3.7.0-0.2+b1sonic1
-libnl-route-3-200==3.7.0-0.2+b1sonic1
 libnl-route-3-dev==3.7.0-0.2+b1sonic1
 libnvhws-dev==26.01.3-1
 libnvhws1==26.01.3-1
@@ -39,7 +37,7 @@ libteam5==1.31-1
 libteamdctl0==1.31-1
 libyang==1.0.73
 libyang-cpp==1.0.73
-libyang-dev==3.12.2-1
+libyang-dev==1.0.73
 libyang3==3.12.2-1
 mlnx-dpdk==22.11.0-2510.2.1
 mlnx-dpdk-dev==22.11.0-2510.2.1
