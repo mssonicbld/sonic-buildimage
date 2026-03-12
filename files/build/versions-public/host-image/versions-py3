@@ -58,7 +58,7 @@ protobuf==5.29.6
 psutil==7.2.2
 ptyprocess==0.7.0
 pyang==2.7.1
-pyangbind==0.8.2
+pyangbind==0.8.7
 pycairo==1.26.1
 pycparser==2.22
 pygments==2.19.2
