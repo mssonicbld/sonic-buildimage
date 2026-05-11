@@ -18,6 +18,7 @@ libsaimetadata==1.0.0
 libsaimetadata-dev==1.0.0
 libsairedis==1.0.0
 libsairedis-dev==1.0.0
+libsaithrift-dev==0.9.4
 libsaivs==1.0.0
 libswsscommon==1.0.0
 libswsscommon-dev==1.0.0
@@ -61,3 +62,5 @@ sonic-mgmt-common-codegen==1.0.0
 sonic-platform-pddf==1.1
 sonic-platform-pddf-sym==1.1
 stp==1.0.0
+sys-sdk-dev==1.mlnx.4.8.3430
+sys-sdk-main==1.mlnx.4.8.3430

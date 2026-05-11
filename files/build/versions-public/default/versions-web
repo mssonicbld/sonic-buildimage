@@ -104,8 +104,12 @@ https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/fw-2016.3430/fw-SPC5-rel-37_2016_3430-EVB.mfa==728330631ba927bd0b0a22cde8b315de
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2511.35.3400.14-bookworm-amd64/mlnx-sai-dbgsym_1.mlnx.SAIBuild2511.35.3400.14_amd64.deb==757e19b5fab8c03f30afdb39ed171e55
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2511.35.3400.14-bookworm-amd64/mlnx-sai_1.mlnx.SAIBuild2511.35.3400.14_amd64.deb==f7cffcb501b6877fd2e0aae5d2144330
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2511.35.3400.14-trixie-amd64/mlnx-sai-dbgsym_1.mlnx.SAIBuild2511.35.3400.14_amd64.deb==15dfad807ea7b20366bbce9687be926b
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sai-SAIBuild2511.35.3400.14-trixie-amd64/mlnx-sai_1.mlnx.SAIBuild2511.35.3400.14_amd64.deb==8dafdbd73a5bc820528967f9c5acd245
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.3430-bookworm-amd64/sys-sdk_1.mlnx.4.8.3430_amd64-dev.deb==8aee2daf6f6f72e7b5906babd98ded3f
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.3430-bookworm-amd64/sys-sdk_1.mlnx.4.8.3430_amd64.deb==38ebb3cbfd956f61d6bae42fd74159ec
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.3430-trixie-amd64/sys-sdk_1.mlnx.4.8.3430_amd64-dev.deb==b3c7f1167ce20107e55ca20c89b5240e
+https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.8.3430-trixie-amd64/sys-sdk_1.mlnx.4.8.3430_amd64.deb==95757b122fcd409594d0f70ce7e86d59
 https://github.com/Mellanox/Spectrum-SDK-Drivers/archive/refs/heads/4.8.3430.zip==3aeff37a646b6747a70ecd73deac4d81
 https://github.com/nanomsg/nanomsg/archive/1.2.2.tar.gz==22525d90e9e34099f8f25dfcf6515bfb
 https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.144.0/otelcol-contrib_0.144.0_linux_amd64.deb==eb434c72277d208d0f2218da6666dd45
