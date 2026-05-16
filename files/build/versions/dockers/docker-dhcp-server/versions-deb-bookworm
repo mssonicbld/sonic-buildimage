@@ -20,7 +20,7 @@ liblua5.1-0==5.1.5-9
 libmariadb3==1:10.11.14-0+deb12u2
 libmpfr6==4.2.0-1
 libpcap0.8==1.10.3-1
-libpq5==15.16-0+deb12u1
+libpq5==15.18-0+deb12u1
 libsource-highlight-common==3.1.9-4.2
 libsource-highlight4v5==3.1.9-4.2+b3
 libssl-dev==3.0.19-1~deb12u2
