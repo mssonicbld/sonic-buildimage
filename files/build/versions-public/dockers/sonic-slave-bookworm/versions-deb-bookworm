@@ -246,7 +246,7 @@ java-common==0.74
 java-wrappers==0.4
 javahelper==0.78
 javascript-common==11+nmu1
-jq==1.6-2.1+deb12u1
+jq==1.6-2.1+deb12u2
 junit4==4.13.2-3
 junit5==5.9.2-1
 kernel-wedge==2.106~deb12u1
@@ -858,7 +858,7 @@ libjetty9-java==9.4.57-1.1~deb12u1
 libjpeg-dev==1:2.1.5-2
 libjpeg62-turbo==1:2.1.5-2
 libjpeg62-turbo-dev==1:2.1.5-2
-libjq1==1.6-2.1+deb12u1
+libjq1==1.6-2.1+deb12u2
 libjs-bootstrap4==4.6.1+dfsg1-4+deb12u1
 libjs-d3==3.5.17-4
 libjs-jquery==3.6.1+dfsg+~3.5.14-1
@@ -1201,7 +1201,7 @@ libqt5waylandcompositor5==5.15.8-2
 libqt5widgets5==5.15.8+dfsg-11+deb12u3
 libqt5xml5==5.15.8+dfsg-11+deb12u3
 libquadmath0==12.2.0-14+deb12u1
-librabbitmq4==0.11.0-1+deb12u1
+librabbitmq4==0.11.0-1+deb12u2
 librados2==16.2.15+ds-0+deb12u2
 libraqm0==0.7.0-4.1
 librav1e0==0.5.1-6
@@ -1893,7 +1893,7 @@ python3-typing-extensions==4.4.0-1
 python3-tz==2022.7.1-4
 python3-ufolib2==0.14.0+dfsg1-1
 python3-unidiff==0.7.3-1
-python3-urllib3==1.26.12-1+deb12u3
+python3-urllib3==1.26.12-1+deb12u4
 python3-venv==3.11.2-1+b1
 python3-wadllib==1.3.6-4
 python3-wcwidth==0.2.5+dfsg1-1.1

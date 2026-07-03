@@ -5,7 +5,7 @@ docker==7.1.0
 docker-image-py==0.1.13
 enum34==1.1.10
 execnet==2.1.2
-filelock==3.29.4
+filelock==3.29.5
 freezegun==1.5.5
 ijson==3.5.0
 inotify==0.2.12
@@ -14,7 +14,6 @@ jsondiff==2.2.1
 jsonpatch==1.33
 jsonpointer==3.1.1
 jsonschema==2.6.0
-lazy-object-proxy==1.12.0
 libyang==3.1.0
 netaddr==0.8.0
 pddf-platform==1.0
