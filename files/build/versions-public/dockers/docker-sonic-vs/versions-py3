@@ -11,7 +11,7 @@ dbus-python==1.4.0
 docker==7.2.0
 docker-image-py==0.2.0
 enlighten==1.14.1
-filelock==3.29.7
+filelock==3.31.1
 idna==3.18
 invoke==3.0.3
 ipaddress==1.0.23
