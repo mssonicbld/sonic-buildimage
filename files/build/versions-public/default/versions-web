@@ -22,6 +22,10 @@ http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-pi_0.1.1
 http://download.opensuse.org/repositories/home:/p4lang/Debian_11/p4lang-pi_0.1.1.orig.tar.gz==17a6b9ce972e7666690ebe398dce7f63
 http://www.mellanox.com/downloads/MFT/mft-4.36.0-1031-x86_64-deb.tgz==f78e39e9b1e9157d1bdea647b4d9e6e7
 http://www.mellanox.com/downloads/MFT/mft-4.36.0-147-aarch64-deb.tgz==29a17968baf6f861e9ce92145b944e61
+https://api.github.com/repos/fullstorydev/grpcurl/releases/latest==bf23d13532183d3ef3069a5b92c085b5
+https://api.github.com/repos/influxdata/influxdb/releases/latest==bdac229e726f45cc0aaadcb232ace88b
+https://api.github.com/repos/nanomsg/nanomsg/releases/latest==d8d531bb2330c9b1aa42dd291f0e791c
+https://api.github.com/repos/sflow/sflowtool/releases/latest==7d75974762f8b33e86c7ef11d5bd27c8
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.debian.tar.xz==5a87fe5e2077763dd62ad40716804954
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.dsc==c9d75e69a27738c24a25fff61285998b
 https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37.orig.tar.xz==6075acd95528d14013fcde1ae279efdf
@@ -44,6 +48,7 @@ https://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.debian.tar.xz
 https://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.dsc==ce345ed4c63d1ec10849bd1d4f497b18
 https://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz==689148621a2eaa734497b12bed1c5202
 https://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc==1c0cb23a67bd4e5d25a8dc423ed65a5e
+https://dl.influxdata.com/influxdb/releases/influxdb3-core-3.10.0_linux_amd64.tar.gz==93e534cba71f549c0a2734068a1c1cf3
 https://dl.influxdata.com/influxdb/releases/influxdb3-core-3.9.0_linux_amd64.tar.gz==45e117aa45346586f1735a4b343e8edd
 https://download.docker.com/linux/debian/gpg==1afae06b34a13c1b3d9cb61a26285a15
 https://github.com/anchore/syft/releases/download/v1.44.0/syft_1.44.0_linux_amd64.tar.gz==bcdbe6cd637d3bddfe95bfec7e8e04d1
@@ -111,12 +116,15 @@ https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sd
 https://github.com/Mellanox/Spectrum-SDK-Drivers-SONiC-Bins/releases/download/sdk-4.10.1086-trixie-amd64/sys-sdk_1.mlnx.4.10.1086_amd64.deb==c2ba1e030b4f119ba500555f7257ccbb
 https://github.com/Mellanox/Spectrum-SDK-Drivers/archive/refs/heads/4.10.1086.zip==2d5db2be6a35acd50f9a31794bfcc28a
 https://github.com/nanomsg/nanomsg/archive/1.2.2.tar.gz==22525d90e9e34099f8f25dfcf6515bfb
+https://github.com/nanomsg/nanomsg/archive/refs/tags/1.2.4.tar.gz==b11d8558c73e6f51172be7c0720152df
 https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.144.0/otelcol-contrib_0.144.0_linux_amd64.deb==eb434c72277d208d0f2218da6666dd45
 https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.144.0/otelcol-contrib_0.144.0_linux_arm64.deb==98ca208ac0f38b10611382add01ef98c
 https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.144.0/otelcol-contrib_0.144.0_linux_armv7.deb==65cbdc3debe9ac968be5d1e09aeaf9a1
 https://github.com/seladb/PcapPlusPlus/archive/refs/tags/v24.09.tar.gz==5ae65d152e8b76390ce28806bc085ffd
+https://go.dev/dl/?mode=json==061cc8f468791eaf47f3b64bc5af108b
 https://go.dev/dl/go1.23.4.linux-amd64.tar.gz==8e8e23e5ca5d7d8841616414dd0ff890
 https://go.dev/dl/go1.25.12.linux-amd64.tar.gz==0b8f0d3296efa38829cb78d9402a3fe4
+https://go.dev/dl/go1.26.6.linux-amd64.tar.gz==bb3ddfbb5d7c85aa280bc0e8a637d29d
 https://packages.buildkite.com/sonic-vpp/vpp/any/pool/any/main/v/vpp/libvppinfra-dev_2606-0.4+b1sonic1_amd64.deb==2393a31b0ee083171eef8039bd60ca92
 https://packages.buildkite.com/sonic-vpp/vpp/any/pool/any/main/v/vpp/libvppinfra_2606-0.4+b1sonic1_amd64.deb==781e0932553f7a5eaf3fb95bc4b04346
 https://packages.buildkite.com/sonic-vpp/vpp/any/pool/any/main/v/vpp/vpp-dbg_2606-0.4+b1sonic1_amd64.deb==422b535a7ae672011572e72824ae7c7a
